@@ -166,6 +166,10 @@ gem 'slim'
 gem 'bullet', group: 'development'
 
 gem 'angellist_api'
+# FIXME: hackety hack 20150604
+gem 'eventmachine','=1.0.4'
+gem 'test-unit'
+
 gem 'podio', git: 'https://github.com/webhat/podio-rb.git'
 gem 'podiocrm', git: 'https://github.com/webhat/podiocrm.git'
 # gem 'podiocrm', path: '../podiocrm'

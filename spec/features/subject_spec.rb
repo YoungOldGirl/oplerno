@@ -26,11 +26,11 @@ describe 'Visiting URLs' do
     end
 
     after(:each) do
-      @course.destroy
-      Course.all.each { |course|
-        course.destroy
-      }
-      @user.destroy
+      #@course.destroy unless @course.nil?
+      #Course.all.each { |course|
+      #  course.destroy 
+      #}
+      #@user.destroy
     end
 
     it 'should add subject to course' do

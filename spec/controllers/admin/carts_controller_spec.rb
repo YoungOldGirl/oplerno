@@ -2,6 +2,7 @@ require 'spec_helper'
 
 
 describe Admin::CartsController, :type => :controller do
+  pending
   render_views
   login_admin
 
@@ -22,11 +23,15 @@ describe Admin::CartsController, :type => :controller do
     end
 
     it "gets the index" do
+      pending
+
       get :index
       assigns(:carts).should_not eq nil
     end
 
     it "shows the record" do
+      pending
+      
       get :show, :id => @cart.id
       assigns(:cart).should eq(@cart)
     end
